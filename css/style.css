@@ -4,6 +4,9 @@
     box-sizing: border-box;
     transition: 0.6s;
 }
+.owl-carousel .owl-stage {
+    transition-timing-function: linear !important;
+}
 body{
     overflow-x: hidden;
 }
@@ -181,8 +184,8 @@ header .responsive-icon{
 }
 .business-growth .card-section .card .card-top{
     background-color: #EAE8E8;
-    padding: 25px 30px;
-    height: 200px;
+    /* padding: 25px 30px;
+    height: 200px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -370,14 +373,24 @@ header .responsive-icon{
     margin-bottom: 65px;
 }
 .application .application-card{
-    display: grid;
-    grid: auto/auto auto auto auto auto;
+    display: flex;
     align-items: center;
     justify-items: center;
+    /* animation: slide 4s linear infinite; */
+}
+@keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-1000px);
+    }
 }
 .application .application-card .card{
+    flex-shrink: 0;
     background-color: white;
-    width: 200px;
+    width: 20%;
+    margin: 0 25px;
     padding: 15px 0;
     margin-top: 15px;
     cursor: pointer;
@@ -436,6 +449,9 @@ header .responsive-icon{
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
+}
+.customers-review .body .details img{
+    width: 50%;
 }
 .customers-review .body .bottom-box{
     display: flex;

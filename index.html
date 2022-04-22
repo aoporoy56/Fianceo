@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Fianceo</title>
 </head>
@@ -69,7 +74,7 @@
         <div class="card-section">
             <div class="card" data-aos="fade-right"  data-aos-duration="1000">
                 <div class="card-top">
-                    <img src="image/business-growth-1.png" alt="">
+                    <img src="image/business-growth-1.svg" alt="">
                 </div>
                 <div class="card-bottom">
                     <h2>Automated expenses</h2>
@@ -78,7 +83,7 @@
             </div>
             <div class="card" data-aos="fade-up"  data-aos-duration="1000">
                 <div class="card-top">
-                    <img src="image/business-growth-2.png" alt="">
+                    <img src="image/business-growth-2.svg" alt="">
                 </div>
                 <div class="card-bottom">
                     <h2>Spending overview</h2>
@@ -87,7 +92,7 @@
             </div>
             <div class="card" data-aos="fade-left"  data-aos-duration="1000">
                 <div class="card-top">
-                    <img src="image/business-growth-3.png" alt="">
+                    <img src="image/business-growth-3.svg" alt="">
                 </div>
                 <div class="card-bottom">
                     <h2>Track and pay invoices</h2>
@@ -197,6 +202,28 @@
                 <h2>Kickstarted</h2>
             </div>
             <div class="card" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="image/app-1.svg" alt="">
+                <h2>Slack</h2>
+            </div>
+            <div class="card" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="image/app-2.svg" alt="">
+                <h2>Dropbox</h2>
+            </div>
+            <div class="card" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="image/app-3.svg" alt="">
+                <h2>Zappier</h2>
+            </div>
+            <div class="card" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="image/app-4.svg" alt="">
+                <h2>Mailchamp</h2>
+            </div>
+            <div class="card" data-aos="zoom-in-up" data-aos-duration="1000">
+                <img src="image/app-5.svg" alt="">
+                <h2>Kickstarted</h2>
+            </div>
+        </div>
+        <div class="application-card">
+            <div class="card" data-aos="zoom-in-up" data-aos-duration="1000">
                 <img src="image/app-6.svg" alt="">
                 <h2>Hubspot</h2>
             </div>
@@ -221,11 +248,55 @@
             <h3>See All intregrations</h3>
         </div>
     </section>
-    <section class="customers-review">
-        <h3>Love Form Customers</h3>
-        <div class="body">
+    <section class="customers-review owl-carousel owl-theme">
+        
+        <div class="body slide slide-1">
             <div class="image" data-aos="fade-up" data-aos-duration="1000">
                 <img src="image/customer.png" alt="">
+            </div>
+            <div class="details" data-aos="fade-down" data-aos-duration="1000">
+                <div class="rating">
+                    <img src="image/rating.png" alt="">
+                </div>
+                <div class="message">
+                    <h1>“Choosing it was a no-brainer. It’s easy to set up and the support experience is unparalleled. Highly recommended ”</h1>
+                </div>
+                <div class="bottom-box">
+                    <div class="customer-info">
+                        <h3>
+                            <b>Zuben Mathews, </b> <br>CEO  & Co-founder</h3>
+                    </div>
+                    <div class="company-logo">
+                        <img src="image/company-icon-5.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body slide slide-2">
+            <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                <img src="image/customer-1.png" alt="">
+            </div>
+            <div class="details" data-aos="fade-down" data-aos-duration="1000">
+                <div class="rating">
+                    <img src="image/rating.png" alt="">
+                </div>
+                <div class="message">
+                    <h1>“Choosing it was a no-brainer. It’s easy to set up and the support experience is unparalleled. Highly recommended ”</h1>
+                </div>
+                <div class="bottom-box">
+                    <div class="customer-info">
+                        <h3>
+                            <b>Zuben Mathews, </b> <br>CEO  & Co-founder</h3>
+                    </div>
+                    <div class="company-logo">
+                        <img src="image/company-icon-5.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body slide slide-3">
+            <div class="image" data-aos="fade-up" data-aos-duration="1000">
+                <img src="image/customer-2.png" alt="">
             </div>
             <div class="details" data-aos="fade-down" data-aos-duration="1000">
                 <div class="rating">
@@ -373,6 +444,22 @@
             menu.classList.toggle("active");
         })
         
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".owl-carousel").owlCarousel({
+                items:1,
+                loop:true,
+                docts:true,
+                autoplay:true,
+                autoplaySpeed:1000,
+                smartSpeed:2000,
+                autoplayHoverPause:true
+            });
+        });
     </script>
 </body>
 </html>
