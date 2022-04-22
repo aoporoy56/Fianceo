@@ -373,7 +373,8 @@ header .responsive-icon{
     margin-bottom: 65px;
 }
 .application .application-card{
-    display: flex;
+    display: grid;
+    grid: auto/auto auto auto auto auto;
     align-items: center;
     justify-items: center;
     /* animation: slide 4s linear infinite; */
@@ -383,14 +384,12 @@ header .responsive-icon{
         transform: translateX(0);
     }
     100%{
-        transform: translateX(-1000px);
+        transform: translateX(-100vw);
     }
 }
 .application .application-card .card{
-    flex-shrink: 0;
     background-color: white;
-    width: 20%;
-    margin: 0 25px;
+    width: 200px;
     padding: 15px 0;
     margin-top: 15px;
     cursor: pointer;
@@ -1113,6 +1112,12 @@ footer .bottom{
     }
     footer .footer-section .subscribe-box {
         margin-top: 35px;
+    }
+    footer .bottom{
+        display: block;
+    }
+    footer .bottom img{
+        margin: 0 auto;
     }
 }
 /* @media only screen and (max-width: 768px) {
